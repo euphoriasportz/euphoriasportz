@@ -1,0 +1,127 @@
+.mdl-button--danger {
+    background-color: #f44336; /* Change the background color to red */
+    color: white; /* Change the text color to white */
+    border-radius: 5px; /* Add border radius to make the button rounded */
+    transition: background-color 0.3s ease; /* Add a transition effect to the background color */
+  }
+  
+  .mdl-button--danger:hover {
+    background-color: #e53935; /* Change the background color on hover */
+  }
+  .jumbotron {
+    background-color: #4285F4;
+    color: white;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+  }
+  .jumbotron h1 {
+    font-size: 48px;
+    font-weight: 300;
+  }
+  .jumbotron p {
+    font-size: 24px;
+  }
+  .jumbotron a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 20px;
+    background-color: #333;
+    border-radius: 5px;
+  }
+  .jumbotron a:hover {
+    background-color: #007bff;
+  }
+  .card-deck {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .card {
+    margin: 10px;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    min-width: 250px;
+  }
+  .card img {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .card-body {
+    padding: 10px;
+  }
+  .card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+    .card-text {
+      font-size: 18px;
+    }
+    .popup-window {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 400px;
+      height: 300px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      z-index: 9999;
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    
+    .popup-window form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    
+    .popup-window label {
+      margin-bottom: 10px;
+    }
+    
+    .popup-window input[type="text"] {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+    
+    .popup-window input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .popup-window input[type="submit"]:hover {
+      background-color: #3e8e41;
+    }
+    
+    .close-button {
+      padding: 10px 20px;
+      background-color: #f44336;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .close-button:hover {
+      background-color: #e53935;
+    }
