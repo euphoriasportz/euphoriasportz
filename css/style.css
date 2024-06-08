@@ -1107,16 +1107,12 @@ a:focus {
   padding: 20px;
 }
 
-.video-section .container .card{
-  background-color: none;
-  padding: 20px;
-}
 
-.video-section .container .card .videocontainer{
+.video-section .container .videocontainer{
   border: #000000;
   border-radius: 10px;
-  width: 90%;
-  height: 75vh;
+  width: 70%;
+  height: 60vh;
   justify-content: center;
 }
 
