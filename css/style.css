@@ -1109,6 +1109,7 @@ a:focus {
 
 .video-section .container .card{
   background-color: none;
+  padding: 20px;
 }
 
 .video-section .container .card .videocontainer{
