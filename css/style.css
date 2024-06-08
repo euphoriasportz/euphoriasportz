@@ -1038,7 +1038,6 @@ a:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 40vw;
   transform-origin: 50% 50%;
   transform: translateZ(.1px) scale(0.9) translateX(0px) translateY(-3vh);
   transition: 1s;
