@@ -1115,9 +1115,9 @@ a:focus {
 .video-section .container .card .videocontainer{
   border: #000000;
   border-radius: 10px;
-  width: 100%;
+  width: 90%;
   height: 75vh;
-  background-color: #00000000;
+  justify-content: center;
 }
 
 .booking-section{
