@@ -1114,6 +1114,7 @@ a:focus {
   width: 70%;
   height: 60vh;
   justify-content: center;
+  margin: 10px;
 }
 
 .booking-section{
