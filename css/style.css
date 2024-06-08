@@ -1021,62 +1021,68 @@ a:focus {
 
 .horizontal-scroll-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  width: 100vh;
-  transform: rotate(-90deg) translate3d(0,-100vh,0);
-  transform-origin: right top;
-  overflow-y: auto;
-  overflow-x: hidden;
+  width: 100vw;
+  overflow-x: auto;
+  overflow-y: hidden;
   padding: 50px;
-  height: 100vw;
+  height: 100vh;
   perspective: 1px;
-	transform-style: preserve-3d;
+  transform-style: preserve-3d;
   padding-bottom: 10rem;
 }
 
 .img-wrapper {
-  transform: rotate(90deg);
+  transform: rotate(0deg);
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 40vh;
+  min-width: 40vw;
   transform-origin: 50% 50%;
-  transform: rotate(90deg) translateZ(.1px) scale(0.9) translateX(0px) translateY(-3vh);
+  transform: translateZ(.1px) scale(0.9) translateX(0px) translateY(-3vh);
   transition: 1s;
 }
 
 .img-wrapper:hover {
-  min-height: 65vh;
- }
- 
- .slower {
-   transform: rotate(90deg) translateZ(-.2px) scale(1.1) translateX(0%) translateY(-10vh);
- }
- .slower1 {
-   transform: rotate(90deg) translateZ(-.25px) scale(1.05) translateX(0%) translateY(8vh);
- }
- .slower2 {
-   transform: rotate(90deg) translateZ(-.3px) scale(1.3) translateX(0%) translateY(2vh);
- }
- .slower-down {
-   transform: rotate(90deg) translateZ(-.2px) scale(1.1) translateX(0%) translateY(16vh) ;
- }
- .faster {
-   transform: rotate(90deg) translateZ(.15px) scale(0.8) translateX(0%) translateY(14vh) ;
- }
- .faster1 {
-   transform: rotate(90deg) translateZ(.05px) scale(0.8) translateX(0%) translateY(10vh) ;
- }
- .fastest {
-   transform: rotate(90deg) translateZ(.22px) scale(0.7) translateX(-10vh) translateY(-15vh) ;
- }
- .vertical {
-    transform: rotate(90deg) translateZ(-.15px) scale(1.15) translateX(0%) translateY(0%) ;
- }
- .last {
-   transform: rotate(90deg) translateZ(-.2px) scale(1.1) translateX(25vh) translateY(-8vh) ;
- }
+  min-width: 65vw;
+}
+
+.slower {
+  transform: translateZ(-.2px) scale(1.1) translateX(0%) translateY(-10vh);
+}
+
+.slower1 {
+  transform: translateZ(-.25px) scale(1.05) translateX(0%) translateY(8vh);
+}
+
+.slower2 {
+  transform: translateZ(-.3px) scale(1.3) translateX(0%) translateY(2vh);
+}
+
+.slower-down {
+  transform: translateZ(-.2px) scale(1.1) translateX(0%) translateY(16vh);
+}
+
+.faster {
+  transform: translateZ(.15px) scale(0.8) translateX(0%) translateY(14vh);
+}
+
+.faster1 {
+  transform: translateZ(.05px) scale(0.8) translateX(0%) translateY(10vh);
+}
+
+.fastest {
+  transform: translateZ(.22px) scale(0.7) translateX(-10vh) translateY(-15vh);
+}
+
+.vertical {
+  transform: translateZ(-.15px) scale(1.15) translateX(0%) translateY(0%);
+}
+
+.last {
+  transform: translateZ(-.2px) scale(1.1) translateX(25vh) translateY(-8vh);
+}
 
  .card {
   overflow: hidden;
