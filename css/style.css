@@ -1043,9 +1043,7 @@ a:focus {
   transition: 1s;
 }
 
-.img-wrapper:hover {
-  min-width: 65vw;
-}
+
 
 .slower {
   transform: translateZ(-.2px) scale(1.1) translateX(0%) translateY(-10vh);
@@ -1117,7 +1115,7 @@ a:focus {
   border: #000000;
   border-radius: 10px;
   width: 70%;
-  height: 60vh;
+  height: 45vh;
   justify-content: center;
   margin: 10px;
 }
