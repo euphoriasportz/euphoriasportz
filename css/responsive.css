@@ -127,3 +127,14 @@
     max-width: 1170px;
   }
 }
+@media (max-width: 768px) { /* Tablet breakpoint */
+  .card {
+    flex: 1 0 45%; /* Adjust percentage as needed */
+  }
+}
+
+@media (max-width: 480px) { /* Mobile breakpoint */
+  .card {
+    flex: 1 0 100%; /* Make cards full width on mobile */
+  }
+}
