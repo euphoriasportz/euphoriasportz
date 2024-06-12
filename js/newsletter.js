@@ -13,6 +13,7 @@ window.addEventListener("DOMContentLoaded", function() {
         setTimeout(function(){
           msg.innerHTML = ""
         },5000)
+        yourForm.reset()
       })
       .catch(error => console.error('Error', error))
   })
