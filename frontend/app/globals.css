@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+:root {
+  --background: #060709;
+  --foreground: #f3f4f6;
+  --neon-green: #39FF14;
+  --neon-yellow: #FFD700;
+  --dark-accent: #0f1115;
+  --glass-bg: rgba(15, 17, 21, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.06);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  background: #22252a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #333842;
+}
+
+/* Custom Utilities */
+@utility glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+@utility neon-glow-green {
+  box-shadow: 0 0 15px rgba(57, 255, 20, 0.2), inset 0 0 10px rgba(57, 255, 20, 0.1);
+}
+
+@utility neon-glow-yellow {
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.2), inset 0 0 10px rgba(255, 215, 0, 0.1);
+}
+
+@utility text-glow-green {
+  text-shadow: 0 0 8px rgba(57, 255, 20, 0.4);
+}
+
+@utility text-glow-yellow {
+  text-shadow: 0 0 8px rgba(255, 215, 0, 0.4);
+}
+
+/* Parallax Scroll Effects */
+.parallax-container {
+  perspective: 8px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.parallax-layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.parallax-bg {
+  transform: translateZ(-4px) scale(1.5);
+  z-index: 1;
+}
+
+.parallax-content {
+  transform: translateZ(0);
+  z-index: 2;
+}
+
+/* Page animations */
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+    filter: brightness(1.2);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 3s infinite ease-in-out;
+}
+
+@keyframes gridFlow {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 50px;
+  }
+}
+
+.bg-grid-pattern {
+  background-size: 50px 50px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  animation: gridFlow 20s linear infinite;
+}
+
+/* Stadium Floodlight Beam Effect */
+.stadium-light-beam {
+  background: radial-gradient(circle at top, rgba(255, 255, 255, 0.15) 0%, rgba(57, 255, 20, 0.02) 40%, transparent 70%);
+  transform: rotate(-15deg);
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
